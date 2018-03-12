@@ -3,7 +3,7 @@
 
 int main()
 {
-	Stiva<int> intStack = Stiva<int>();
+	Stiva<int>* intStack = new Stiva<int>(4);
 	
 	int count;
 	std::cin >> count;
@@ -13,13 +13,13 @@ int main()
 	for (int i = 0; i < count; i++)
 	{
 		std::cin >> number;
-		intStack.push(number);
+		intStack->push(number);
 	}
 
 	for (int i = 0; i < count; i++)
 	{
-		std::cout << intStack.top();
-		intStack.pop();
+		std::cout << intStack->top();
+		intStack->pop();
 	}
 
 	return 0;

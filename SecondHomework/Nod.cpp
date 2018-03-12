@@ -1,7 +1,9 @@
 #include "Nod.h"
 
+template class Nod<int>;
+
 template <typename T>
-Nod::Nod(T value)
+Nod<T>::Nod(T value)
 {
 	info = value;
 }

@@ -1,13 +1,13 @@
 #pragma once
 #include "Nod.h"
 
-template <typename T>
+template <class T>
 class Stiva
 {
 	private:
-		Nod<T>* peak;
+		Nod<T>* _peak;
 	public:
-		Stiva();
+		Stiva(int useless);
 		void push(T value);
 		void pop();
 		bool isEmpty();

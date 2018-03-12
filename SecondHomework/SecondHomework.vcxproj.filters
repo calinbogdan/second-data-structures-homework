@@ -24,12 +24,21 @@
     <ClCompile Include="Stiva.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Lista.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Problema_5.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Nod.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Stiva.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Lista.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

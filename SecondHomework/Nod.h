@@ -1,12 +1,10 @@
 #pragma once
 
 template <typename T>
-class Nod
+struct Nod
 {
-	private:
+	public:
 		T info;
 		Nod<T>* next;
-
-	public:
 		Nod(T value);
 };

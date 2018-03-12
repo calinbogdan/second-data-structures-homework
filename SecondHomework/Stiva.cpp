@@ -1,39 +1,43 @@
 #include "Stiva.h"
+#include "Nod.h"
+#include <iostream>
 
-template <typename T>
-Stiva::Stiva()
+template class Stiva<int>;
+
+template<class T>
+Stiva<T>::Stiva(int useless)
 {
-	peak = NULL;
+	_peak = NULL;
 }
 
-template<typename T>
+template<class T>
 void Stiva<T>::push(T value)
 {
-	Nod<T>* node = new Nod<T>(info);
-	(*node).next = peak;
-	peak = node;
+	Nod<T>* node = new Nod<T>(value);
+	(*node).next = _peak;
+	_peak = node;
 }
 
-template<typename T>
+template<class T>
 void Stiva<T>::pop()
 {
 	if (!isEmpty())
 	{
-		Nod<T>* node = peak;		
-		peak = peak->next;
+		Nod<T>* node = _peak;		
+		_peak = _peak->next;
 		delete node;
 	}
 }
 
-template<typename T>
+template<class T>
 bool Stiva<T>::isEmpty()
 {
-	return peak == NULL;
+	return _peak == NULL;
 }
 
-template<typename T>
+template<class T>
 T Stiva<T>::top()
 {
-	return peak->info;
+	return _peak->info;
 }
 

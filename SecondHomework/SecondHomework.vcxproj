@@ -118,11 +118,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Lista.cpp" />
     <ClCompile Include="Nod.cpp" />
     <ClCompile Include="Problema_1.cpp" />
+    <ClCompile Include="Problema_5.cpp" />
     <ClCompile Include="Stiva.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Lista.h" />
     <ClInclude Include="Nod.h" />
     <ClInclude Include="Stiva.h" />
   </ItemGroup>
